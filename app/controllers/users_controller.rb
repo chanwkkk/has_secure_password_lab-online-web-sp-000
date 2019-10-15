@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
   def require_match
     if params[:user][:password]!=params[:user][:password_confirmation]
-      redirect_to '/signup'
+      redirect_to '/users/new'
     end
   end
 end
